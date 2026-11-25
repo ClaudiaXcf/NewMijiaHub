@@ -5,8 +5,25 @@
   "description": "米家 Web 版：浏览器端小米智能家居控制台（演示模式开箱即用 + 实验性小米云扫码登录真机控制）。协议实现参考 mihome-pc-unofficial 逆向文档，零第三方依赖。",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "node test/browser-smoke.js",
+    "test:ui": "node test/ui-click.js",
+    "shot": "node test/shot.js docs"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClaudiaXcf/NewMijiaHub.git"
+  },
+  "homepage": "https://github.com/ClaudiaXcf/NewMijiaHub#readme",
+  "keywords": [
+    "mihome",
+    "mijia",
+    "miot",
+    "xiaomi",
+    "smart-home",
+    "zero-dependency"
+  ],
+  "license": "UNLICENSED",
   "engines": {
     "node": ">=18"
   }
