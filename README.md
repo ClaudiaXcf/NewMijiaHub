@@ -14,9 +14,11 @@
 
 </div>
 
-![米家 Web 版首页](docs/zh-home.png)
+![米家 Web 版首页](https://cdn.jsdelivr.net/gh/ClaudiaXcf/NewMijiaHub@main/docs/zh-home.png)
 
 > 截图取自内置演示模式，设备与房间均为虚构数据。
+> 图片走 jsDelivr CDN —— GitHub 会把仓库内图片 302 到 `raw.githubusercontent.com`，
+> 该域名在部分网络环境下无法访问，因此这里改用绝对 CDN 地址。
 
 ---
 
@@ -82,9 +84,9 @@ PORT=9000 HOST=127.0.0.1 node server.js   # 换端口 / 换监听地址
 
 ## 界面预览
 
-| 设备设置（改名 / 图标 / 颜色 / 尺寸 / 房间） | 英文界面 · 设备详情 |
-|---|---|
-| ![设置弹窗](docs/zh-settings.png) | ![英文详情](docs/en-detail.png) |
+| 英文界面 | 设备设置（改名 / 图标 / 颜色 / 尺寸 / 房间） | 英文设备详情 |
+|---|---|---|
+| ![英文首页](https://cdn.jsdelivr.net/gh/ClaudiaXcf/NewMijiaHub@main/docs/en-home.png) | ![设置弹窗](https://cdn.jsdelivr.net/gh/ClaudiaXcf/NewMijiaHub@main/docs/zh-settings.png) | ![英文详情](https://cdn.jsdelivr.net/gh/ClaudiaXcf/NewMijiaHub@main/docs/en-detail.png) |
 
 ---
 
