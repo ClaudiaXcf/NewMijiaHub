@@ -1,0 +1,21 @@
+# 依赖（本项目零依赖，留此以防将来引入）
+node_modules/
+
+# ===== 登录凭据：绝对不要提交 =====
+# data/credentials.json 内含 service_token / pass_token / ssecurity，
+# 泄露等于把整个小米账号的设备控制权交出去。
+data/*
+!data/.gitkeep
+
+# 本地工具产物 / 编辑器缓存
+.workbuddy/
+*.log
+npm-debug.log*
+yarn-error.log*
+
+# 编辑器与系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

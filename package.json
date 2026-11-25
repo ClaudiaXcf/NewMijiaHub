@@ -1,0 +1,13 @@
+{
+  "name": "mihome-web",
+  "version": "0.1.0",
+  "private": true,
+  "description": "米家 Web 版：浏览器端小米智能家居控制台（演示模式开箱即用 + 实验性小米云扫码登录真机控制）。协议实现参考 mihome-pc-unofficial 逆向文档，零第三方依赖。",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

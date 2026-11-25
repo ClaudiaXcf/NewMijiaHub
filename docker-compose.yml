@@ -1,0 +1,20 @@
+services:
+  mihome-web:
+    build: .
+    image: mihome-web:latest
+    container_name: mihome-web
+    restart: unless-stopped
+    # 默认只绑本机回环，由反向代理对外；要直接暴露改成 "8899:8899"
+    ports:
+      - "127.0.0.1:8899:8899"
+    environment:
+      PORT: 8899
+      HOST: 0.0.0.0
+    volumes:
+      # 扫码登录后的凭据落在这里，容器重建也不用重新扫码
+      - ./data:/app/data
+    security_opt:
+      - no-new-privileges:true
+    read_only: true
+    tmpfs:
+      - /tmp
